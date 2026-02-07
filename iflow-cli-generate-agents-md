@@ -1,12 +1,12 @@
 
-# Analyze this codebase and generate a hierarchical AGENTS.md structure
+# Analyze this codebase and generate a hierarchical agents.md structure
 
 ## Context & Principles
 
-You are going to help me create a **hierarchical AGENTS.md system** for this codebase. This is critical for AI coding agents to work efficiently with minimal token usage.
+You are going to help me create a **hierarchical agents.md system** for this codebase. This is critical for AI coding agents to work efficiently with minimal token usage.
 
 ### Core Principles:
-1. **Root AGENTS.md is LIGHTWEIGHT** - Only universal guidance, links to sub-files
+1. **Root agents.md is LIGHTWEIGHT** - Only universal guidance, links to sub-files
 2. **Nearest-wins hierarchy** - Agents read the closest agents.md to the file being edited
 3. **JIT (Just-In-Time) indexing** - Provide paths/globs/commands, NOT full content
 4. **Token efficiency** - Small, actionable guidance over encyclopedic documentation
@@ -33,13 +33,13 @@ First, analyze the codebase structure and provide me with:
    - Critical files that serve as good examples
    - Anti-patterns to avoid
 
-Present this as a **structured map** before generating any AGENTS.md files.
+Present this as a **structured map** before generating any agents.md files.
 
 ---
 
-### Phase 2: Generate Root AGENTS.md
+### Phase 2: Generate Root agents.md
 
-Create a **lightweight root AGENTS.md** (~100-200 lines max) that includes:
+Create a **lightweight root agents.md** (~100-200 lines max) that includes:
 
 #### Required Sections:
 
@@ -150,7 +150,7 @@ pnpm --filter @repo/web typecheck && pnpm --filter @repo/web test && pnpm --filt
 
 ### Phase 4: Special Considerations
 
-For each AGENTS.md file, also consider:
+For each agents.md file, also consider:
 
 **A. Design System / UI Package**
 If there's a design system or UI library:
@@ -204,14 +204,14 @@ If there's a database service:
 Provide the files in this order:
 
 1. **Analysis Summary** (from Phase 1)
-2. **Root AGENTS.md** (complete, ready to copy)
+2. **Root agents.md** (complete, ready to copy)
 3. **Each Sub-Folder agents.md** (one at a time, with file path)
 
 For each file, use this format:
 
 ```
 ---
-File: `AGENTS.md` (root)
+File: `agents.md` (root)
 ---
 [full content here]
 
@@ -232,7 +232,7 @@ File: `services/auth/agents.md`
 
 Before generating, verify:
 
-- [ ] Root AGENTS.md is under 200 lines
+- [ ] Root agents.md is under 200 lines
 - [ ] Root links to all sub-agents.md files
 - [ ] Each sub-file has concrete examples (actual file paths)
 - [ ] Commands are copy-paste ready (no placeholders unless unavoidable)
